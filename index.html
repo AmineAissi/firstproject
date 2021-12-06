@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nourth Travel Agency</title>
+    <link rel="stylesheet" href="attachements/css/style.css" />
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+            border-radius: 20px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #302f2f00;
+            border-radius: 20px;
+
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgb(32, 32, 32);
+            border-radius: 20px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(0, 0, 0);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gradienne"></div>
+
+    <header>
+
+        <div class="bg">
+            <div class="bg-slide-wrapper">
+                <img src="attachements/img/bg1.jpg" alt="bg1" class="header-bg" id="bg1">
+                <img src="attachements/img/bg2.jpg" alt="bg2" class="header-bg" id="bg2">
+                <img src="attachements/img/bg3.jpg" alt="bg3" class="header-bg" id="bg3">
+                <img src="attachements/img/bg4.jpg" alt="bg3" class="header-bg" id="bg3">
+                <img src="attachements/img/bg1.jpg" alt="bg1" class="header-bg" id="bg1-clone">
+                <script src="attachements/js/slider.js"></script>
+            </div>
+            <div class="bg-overlay"></div>
+        </div>
+
+        <div class="logo">
+            <img src="attachements/img/logo.png" alt="logo" />
+            <h1 class="title">North Travel Agency</h1>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li onclick="navigate('accueil')">
+                    Accueil
+                    <!--<img src="attachements/img/triangle.png" class="triangle" >
+                    <ul class="hidden-element">                        
+                        <li>op1</li>
+                        <li>op2</li>
+                        <li>op3</li>
+
+                    </ul>-->
+                </li>
+                <li onclick="navigate('services')">
+                    Services
+                    <img src="attachements/img/triangle.png" class="triangle">
+                    <ul class="hidden-element">
+                        <li>Reservation Vol</li>
+                        <li>Location Voiture</li>
+                        <li>Reservation hotel</li>
+
+                    </ul>
+                </li>
+                <li onclick="navigate('A-propos')">
+                    A Propos
+                    <img src="attachements/img/triangle.png" class="triangle" >
+                    <ul class="hidden-element">
+                        <li>Qui nous sommes ?</li>
+                        <li>Pourquoi choisir North travel agency  ?</li>
+
+                    </ul>
+                </li>
+
+                <li onclick="navigate('assistance')">
+                    Partenariats
+                    <img src="attachements/img/triangle.png" class="triangle" >
+                    <ul class="hidden-element">
+                        <li>Nos Partenaires</li>
+                    </ul>
+                </li>
+
+                <li onclick="navigate('contact')">
+                    Contact
+                    <img src="attachements/img/triangle.png" class="triangle" >
+                    <ul class="hidden-element">
+                        <li>Contactez-nous !</li>
+
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="volet3">
+
+            <div class="icon-hidden">
+                <img id="reduire" src="attachements/img/mnm.png" alt="reduire" width="30px">
+            </div>
+            <div class="icon-hidden" style="display: none;">
+                <img id="grandire" src="attachements/img/grd.png" alt="reduire" width="30px">
+            </div>
+            <h1 class="title">Actualités</h1>
+            <div class="elements-container text-1">
+                <div class="act" data-image="attachements/img/paris.jpg" data-titre="Un week-end d’ amour a Paris"
+                    data-contenue="North travel a organisé un programme pour passer un Week-end d’amour A Paris On a assure a nos fideles clients un comfortable vol  avec plein de coins a visiter ,  activités a essayer   et une nouvelle culture a connaitre (culture française  ).">
+                    <img src="attachements/img/paris.jpg" alt="evenment paris">
+                    <p><strong>Un week-end d’ amour a Paris </strong> <br>North travel a organisé...
+                    </p>
+                </div>
+                <div class="act" data-image="attachements/img/sahara.jpg" data-titre="Un week-end de luxe au SAHARA"
+                    data-contenue="North travel a organisé un programme pour passer un Week-end de luxe Au Sahara On a assure a nos fideles clients un comfortable voyage  avec plein de coins a decrouvrir (gorges de toudgha , TINGHIR, Merzouga ,kalaat megouna,ourzazate) activités aessayer   et une nouvelle culture marocaine a connaitre (culture sahraoui).">
+                    <img src="attachements/img/sahara.jpg" alt="evenment sahara">
+                    <p><strong>Un week-end de luxe au SAHARA </strong> <br>North travel a organisé...
+                    </p>
+                </div>
+                <div class="act" data-image="attachements/img/italie.jpg" data-titre="Au cœur de l’Italie"
+                    data-contenue="North travel a organisé un programme qui a permis aux clients de decouvrir mille et une merveilles en Italie . L’Italie a vibré nous clients par ses traditions. Un enchantement perpétuel de Milan à Naples  nous a  offrit une vision à la fois intimiste et grandiose de ce beau pays, depuis les provinces du Nord jusqu’à la célèbre baie de Naples. Sur la côte d'Amalfi et l'île enchanteresse de Capri, nous étions  éblouis par les vues spectaculaires, les falaises, les criques, la végétation luxuriante, la mer turquoise. Grace a North travel nos clients ont  pu découvrir la culture Italienne aussi.
+                ">
+                    <img src="attachements/img/italie.jpg" alt="evenment 1">
+                    <p><strong>Au cœur de l’Italie </strong><br>North travel a organisé un programme pour passer...
+                    </p>
+                </div>
+                <div class="act" data-image="attachements/img/newyork.jpg" data-titre="New York, le grand retour !"
+                    data-contenue="Un séjour à New York s’impose. North travel a organisé un programme pour découvrir New York . La visite de New York a commencé par son cœur, Times Square, illuminé d’enseignes fluorescentes. Puis Manhattan a enchaîné les surprises et merveilles , Rockefeller Center, à l’angle de Broadway et de la 5e Avenue  ,Greenwich Village et ses maisons du XVIIIe siècle ,le quartier chic de Soho, Little Italy, Chinatown, Wall Street, le Financial District... . En traversant le Brooklyn Bridge, nous sommes amenés sur les traces de Paul Auster, là où les quartiers de hipsters de Dumbo et Williamsburg côtoient les élégants brownstones du XIXe siècle de Brooklyn Heights. Avec nos guides passionnés et hautement qualifiés, New York n’avait plus de secret pour nos clients.
+                ">
+                    <img src="attachements/img/newyork.jpg" alt="evenment 1">
+                    <p><strong>New York, le grand retour ! </strong><br>North travel a organisé...
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="border"></div>
+
+        <section id="volet2">
+            <div id="accueil" data-display="flex" class="main-content-container cache">
+                <div class="main-nav-container service-container">
+                    <div class="main-nav-wrapper service-wrapper" onclick="navigate('services')">
+                        <h1 class="text-0">NOS SERVICES</h1>
+                    </div>
+                </div>
+                <div class="main-nav-container events-container">
+                    <div class="main-nav-wrapper events-wrapper" onclick="navigate('evenements')">
+                        <h1 class="text-0">NOS EVENMENTS</h1>
+                    </div>
+                </div>
+                <div class="main-nav-container client-container">
+                    <div class="main-nav-wrapper resrvation-wrapper" onclick="navigate('contact')">
+                        <h1 class="text-0">SERVICE CLIENT</h1>
+                    </div>
+                </div>
+            </div>
+            <script>
+                navWrapper = document.querySelectorAll('.main-nav-wrapper');
+
+                for (let i = 0; i < navWrapper.length; i++) {
+
+                    navWrapper[i].addEventListener('mouseover', () => {
+                        navWrapper[i].parentElement.style.boxShadow = '0px 0px 6px 6px rgba(0, 0, 0, 0.40)'
+                    })
+                    navWrapper[i].addEventListener('mouseout', () => {
+                        navWrapper[i].parentElement.style.boxShadow = 'none'
+                    })
+                }
+
+            </script>
+
+<div id="A-propos" data-display="flex" class="A-propos-container cacher">
+    <h1>A propos</h1>
+    <div data-display="flex" class="A-propos-content-container">
+        <div class="A-propos-nav-container A-propos-quiSomme-container">
+            <div class="A-propos-nav-wrapper-0 quiSomme-wrapper-0" onclick="navigate('quiSomme')">
+                <h1 class="text-1">Qui nous sommes ?</h1>
+            </div>
+        </div>
+        <div class="A-propos-nav-container A-propos-pourquoi-container">
+            <div class="A-propos-nav-wrapper-0 pourquoi-wrapper-0" onclick="navigate('pourquoi')">
+                <h1 class="text-1">Pourquoi choisir North travel agency ?</h1>
+            </div>
+        </div>
+    </div>
+    <p>Partez à la découverte du monde grâce à l'agence de voyages North Travel
+        ! Nous vous proposons des offres de vols, de séjours, et d'hôtels au meilleur
+        prix afin que vous puissiez partir en vacances en toute sérénité.</p>
+</div>
+
+<div id="quiSomme" data-display="block" class="quiSomme-contenaire cacher">
+    <h2><strong>Qui nous sommes ? </strong> </h2>
+    <p>North Travel est l’un des principaux agences de voyage en ligne au Maroc ,
+        proposant à ses clients des offres de voyages sur mesure. Les clients effectuent leur réservation de
+        manière simple et pratique, profitant d'un excellent rapport qualité-prix,
+        d’une large offre internationale de compagnies aériennes et d’hôtels,
+        de sociétés de location de voitures ainsi que de services innovants,
+        le tout premier programme d'abonnement jamais créé dans le secteur du voyage.
+    </p><br>
+</div>
+<div id="pourquoi" data-display="flex" class="pourquoi-contenaire cacher">
+    <h2><strong>Pourquoi choisir North travel agency ?</strong></h2><br>
+    <ul>
+        <li><strong>Le prix :</strong>
+            <p>nous vérifions les prix au quotidien pour vous proposer les tarifs
+                les plus compétitifs</p>
+        </li>
+        <li><strong>Le choix : </strong>
+            <p>vous pouvez choisir de réserver parmi des centaines de compagnies aériennes,
+                des milliers d'hôtels et d'agences de location de voitures dans le monde
+                entier.</p>
+
+        </li>
+        <li><strong>Facilité d'utilisation : </strong>
+            <p>vous pourrez préparer votre voyage sur une seule page grâce à la variété
+                de produits que nous vous offrons.</p>
+        </li>
+        <li><strong>Service client :</strong>
+            <p>notre service client vous offre son aide avant, pendant et après votre voyage. </p>
+        </li>
+        <li><strong>Réputation : </strong>
+            <p>des millions de clients depuis 1999 ! </p>
+        </li>
+
+    </ul>
+</div>
+            </div>
+
+            <div id="actualites" data-display="flex" class="actualités-container cacher">
+                <div class="actualités-container-photo">
+                    <img src="attachements/img/paris.jpg" alt="photo-events" height="100%">
+                </div>
+                <div class="actualités-container-text">
+                    <h1></h1>
+                    <p>
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="services" data-display="flex" class="services-content-container cacher">
+                <div class="services-nav-container services-voyage-container">
+                    <div class="services-nav-wrapper-0 voyage-wrapper-0" onclick="navigate('voyage')">
+                        <h1 class="text-1">Services de voyage</h1>
+                    </div>
+                </div>
+                <div class="services-nav-container services-voiture-container">
+                    <div class="services-nav-wrapper-0 achat-wrapper-0" onclick="navigate('location-voiture')">
+                        <h1 class="text-1">location de voitures</h1>
+                    </div>
+                </div>
+                <div class="services-nav-container services-hotel-container">
+                    <div class="services-nav-wrapper-0 hotel-wrapper-0" onclick="navigate('hotel')">
+                        <h1 class="text-1">services d'hotel</h1>
+                    </div>
+                </div>
+            </div>
+            <script>
+                navWrapper = document.querySelectorAll('.services-nav-wrapper-0');
+
+                for (let i = 0; i < navWrapper.length; i++) {
+
+                    navWrapper[i].addEventListener('mouseover', () => {
+                        navWrapper[i].parentElement.style.boxShadow = '0px 0px 6px 6px rgba(0, 0, 0, 0.40)'
+                    })
+                    navWrapper[i].addEventListener('mouseout', () => {
+                        navWrapper[i].parentElement.style.boxShadow = 'none'
+                    })
+                }
+
+            </script>
+
+            <div id="assistance" data-display="block" class="assistance-container cacher">
+                <h1>Partenariats</h1>
+                <p>Aujourd’hui,<strong> North travel agancy fait partie du groupe Morrocan travel</strong> , qui
+                    comprend les agences de voyage en ligne au Maroc.
+                    Et aussi fait partie du groupe AlloRESERV pour gerer les reservations de nous clients , en oubliant
+                    pas ONCF pour garantir un comfortable voyage à nos clients .
+                    Des associations qui nous permetent d’unir nos compétences et d’offrir un véritable savoir-faire à
+                    nos clients et nos partenaires. De par ses compagnies fondatrices, North travel garde une identité
+                    marocaine forte et présente dans le monde entier.
+                </p>
+
+            </div>
+
+            <div id="contact" data-display="flex" class="contact-container cacher">
+                <div class="container">
+                    <h2>Contact</h2>
+                    <form action="#">
+                        <input type="email" name="email" id="email" placeholder="Enter votre email">
+                        <input type="text" name="name" id="name" placeholder=" Entrer votre nom ">
+                        <textarea name="message" id="message" cols="30" rows="10"
+                            placeholder="Ecrire votre message"></textarea>
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+            </div>
+
+            <div id="events" data-display="flex" class="events cacher"></div>
+
+            </div>
+
+            <div id="voyage" data-display="block" class="voyages-contenaire cacher">
+                <div class="ajouter-ligne ajouter"></div>
+                <table id="events-table">
+                    <tr>
+                        <th>DEPART</th>
+                        <th>DESTINATION</th>
+                        <th>DATE ALLER</th>
+                        <th>DATE RETOUR</th>
+                        <th style="width: 70px;"></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" value="VILLE" disabled></td>
+                        <td><input type="text" value="VILLE" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+                        <td>
+                            <div class="option">
+                                <img src="attachements/img/edit.svg" alt="modifier" class="modifier-ligne" width="20">
+                                <img src="attachements/img/trash.svg" alt="supprimer" class="supprimer-ligne" width="20">
+                                <input type="submit" value="submit" alt="terminer" class="terminer-modification" width="20"
+                                    style="display: none;">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" value="VILLE" disabled></td>
+                        <td><input type="text" value="VILLE" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+
+                        <td>
+                            <div class="option">
+                                <img src="attachements/img/edit.svg" alt="modifier" class="modifier-ligne" width="20">
+                                <img src="attachements/img/trash.svg" alt="supprimer" class="supprimer-ligne" width="20">
+                                <input type="submit" value="submit" alt="terminer" class="terminer-modification" width="20"
+                                    style="display: none;">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" value="VILLE" disabled></td>
+                        <td><input type="text" value="VILLE" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+
+                        <td>
+                            <div class="option">
+                                <img src="attachements/img/edit.svg" alt="modifier" class="modifier-ligne" width="20">
+                                <img src="attachements/img/trash.svg" alt="supprimer" class="supprimer-ligne" width="20">
+                                <input type="submit" value="submit" alt="terminer" class="terminer-modification" width="20"
+                                    style="display: none;">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="hotel" data-display="block" class="hotel-contenaire cacher">
+                <div class="ajouter-ligne ajouter"></div>
+                <table id="events-table">
+                    <tr>
+                        <th>NOM COMPLET</th>
+                        <th>VILLE</th>
+                        <th>DATE DEBUT</th>
+                        <th>DATE FIN</th>
+                        <th style="width: 70px;"></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" value="NOM COMPLET" disabled></td>
+                        <td><input type="text" value="VILLE" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+                        <td>
+                            <div class="option">
+                                <img src="attachements/img/edit.svg" alt="modifier" class="modifier-ligne" width="20">
+                                <img src="attachements/img/trash.svg" alt="supprimer" class="supprimer-ligne" width="20">
+                                <input type="submit" value="submit" alt="terminer" class="terminer-modification" width="20"
+                                    style="display: none;">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" value="NOM COMPLET" disabled></td>
+                        <td><input type="text" value="VILLE" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+
+                        <td>
+                            <div class="option">
+                                <img src="attachements/img/edit.svg" alt="modifier" class="modifier-ligne" width="20">
+                                <img src="attachements/img/trash.svg" alt="supprimer" class="supprimer-ligne" width="20">
+                                <input type="submit" value="submit" alt="terminer" class="terminer-modification" width="20"
+                                    style="display: none;">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" value="NOM COMPLET" disabled></td>
+                        <td><input type="text" value="VILLE" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+
+                        <td>
+                            <div class="option">
+                                <img src="attachements/img/edit.svg" alt="modifier" class="modifier-ligne" width="20">
+                                <img src="attachements/img/trash.svg" alt="supprimer" class="supprimer-ligne" width="20">
+                                <input type="submit" value="submit" alt="terminer" class="terminer-modification" width="20"
+                                    style="display: none;">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="location-voiture" data-display="block" class="hotel-contenaire cacher">
+                <div class="ajouter-ligne ajouter"></div>
+                <table id="events-table">
+                    <tr>
+                        <th>NOM COMPLET</th>
+                        <th>MARK VOITURE</th>
+                        <th>DATE DEBUT</th>
+                        <th>DATE FIN</th>
+                        <th style="width: 70px;"></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" value="NOM COMPLET" disabled></td>
+                        <td><input type="text" value="MERCEDES" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+                        <td>
+                            <div class="option">
+                                <img src="attachements/img/edit.svg" alt="modifier" class="modifier-ligne" width="20">
+                                <img src="attachements/img/trash.svg" alt="supprimer" class="supprimer-ligne" width="20">
+                                <input type="submit" value="submit" alt="terminer" class="terminer-modification" width="20"
+                                    style="display: none;">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" value="NOM COMPLET" disabled></td>
+                        <td><input type="text" value="MERCEDES" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+
+                        <td>
+                            <div class="option">
+                                <img src="attachements/img/edit.svg" alt="modifier" class="modifier-ligne" width="20">
+                                <img src="attachements/img/trash.svg" alt="supprimer" class="supprimer-ligne" width="20">
+                                <input type="submit" value="submit" alt="terminer" class="terminer-modification" width="20"
+                                    style="display: none;">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" value="NOM COMPLET" disabled></td>
+                        <td><input type="text" value="MERCEDES" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+                        <td><input type="date" value="2021-12-06" disabled></td>
+
+                        <td>
+                            <div class="option">
+                                <img src="attachements/img/edit.svg" alt="modifier" class="modifier-ligne" width="20">
+                                <img src="attachements/img/trash.svg" alt="supprimer" class="supprimer-ligne" width="20">
+                                <input type="submit" value="submit" alt="terminer" class="terminer-modification" width="20"
+                                    style="display: none;">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="evenements" data-display="block" class="evenement-container cacher">
+                <h1>Un week-end d’ amour a Paris</h1>
+                <p>North travel a organisé un programme pour passer un Week-end d’amour A Paris On a assure a nos fideles clients un comfortable vol  avec plein de coins a visiter ,  activités a essayer   et une nouvelle culture a connaitre (culture française  ). 
+                </p><br>
+                <h1>Un week-end de luxe au SAHARA</h1>
+                <p>North travel a organisé un programme pour passer un Week-end de luxe Au Sahara
+                    On a assure a nos fideles clients un comfortable voyage  avec plein de coins a decrouvrir (gorges de toudgha , TINGHIR, Merzouga ,kalaat megouna,ourzazate) activités aessayer   et une nouvelle culture marocaine a connaitre (culture sahraoui).                   
+                </p><br>
+                <h1>Au cœur de l’Italie   </h1>           
+                <p>North travel a organisé un programme qui a permis aux clients de decouvrir mille et une merveilles en Italie . L’Italie a vibré nous clients par ses traditions.
+                    Un enchantement perpétuel de Milan à Naples  nous a  offrit une vision à la fois intimiste et grandiose de ce beau pays, depuis les provinces du Nord jusqu’à la célèbre baie de Naples. Sur la côte d'Amalfi et l'île enchanteresse de Capri, nous étions  éblouis par les vues spectaculaires, les falaises, les criques, la végétation luxuriante, la mer turquoise. 
+                    Grace a North travel nos clients ont  pu découvrir la culture Italienne aussi.
+                </p><br>
+                <h1>New York, le grand retour ! </h1>           
+                <p> Un séjour à New York s’impose. North travel a organisé un programme pour découvrir New York .
+                    La visite de New York a commencé par son cœur, Times Square, illuminé d’enseignes fluorescentes. Puis Manhattan a enchaîné les surprises et merveilles , Rockefeller Center, à l’angle de Broadway et de la 5e Avenue  ,Greenwich Village et ses maisons du XVIIIe siècle ,le quartier chic de Soho, Little Italy, Chinatown, Wall Street, le Financial District... . 
+                    En traversant le Brooklyn Bridge, nous sommes amenés sur les traces de Paul Auster, là où les quartiers de hipsters de Dumbo et Williamsburg côtoient les élégants brownstones du XIXe siècle de Brooklyn Heights.
+                    Avec nos guides passionnés et hautement qualifiés, New York n’avait plus de secret pour nos clients.                    
+                </p>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="cordonnes">
+        <div class="text-copyright">
+            <p id="NT">North Travel</p>
+            <p id="CR">2021 © North Travel est une entreprise Immatriculée Au Maroc dont l'adresse est Boukhalef, Tanger
+                Code postal: 90000.</p>
+        </div>
+
+        <div class="logo-footer">
+            <img src="attachements/img/logo.png" alt="logo">
+        </div>
+
+        <div class="social-media">
+            <div class="links">
+                <p onclick="navigate('A-propos')">A propos</p><p onclick="navigate('contact')">contact</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="attachements/img/facebook.png" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="attachements/img/instagram.png" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="attachements/img/twitter.png" alt="twitter"></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="attachements/img/linkedin.png" alt="linkedin"></a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="freduir"></div>
+        <div class="fagrandir"></div>
+
+    </footer>
+
+    <script>
+        //minimiser le volet 3 et afficher le contenue d'article cliquee dans le volet2 
+        const agrandire = document.querySelector('#grandire');
+        const reduire = document.querySelector('#reduire');
+        const volet2 = document.querySelector('#volet2');
+        const volet3 = document.querySelector('#volet3');
+        const article = document.querySelector('#actualites');
+
+        const actualite = document.querySelectorAll('.act');
+
+        //agrandir le volet3 et affichecher ces elements quand on clique sur l'icon
+        agrandire.addEventListener('click', () => {
+            volet3.style.width = '21%';
+            volet2.style.width = '75%';
+            for (let i = 0; i < volet3.children.length; i++) volet3.children[i].style.display = 'block';
+            agrandire.parentElement.style.display = 'none';
+            reduire.parentElement.style.display = 'block';
+        });
+
+        //minimiser le volet3 et cacher ces elelemts fils agrandir le volet2 
+        function minimizer(identifient) {
+            let section = document.getElementById(identifient)
+
+            volet3.style.width = '5%';
+            volet2.style.width = '94%';
+            for (let i = 0; i < volet3.children.length; i++) volet3.children[i].style.display = 'none';
+
+            //navigate(identifient)
+
+            agrandire.parentElement.style.display = 'block';
+        }
+
+        document.getElementById('reduire').addEventListener('click', () => {
+            minimizer('volet3');
+        })
+
+        //naviguer entre les elements
+        function navigate(id) {
+
+            if (id) {
+                const section = document.getElementById(id);
+                display = section.dataset.display;
+                for (let i = 0; i < volet2.children.length; i++) volet2.children[i].style.display = 'none';
+                section.style.display = display;
+            }
+        }
+
+        //event listner pour les elements d'actualite minimisees
+        actualite.forEach((e) => {
+            e.addEventListener('click', () => {
+                article.children[0].firstElementChild.src = e.dataset.image;
+                article.children[1].firstElementChild.innerHTML = e.dataset.titre;
+
+                article.children[1].lastElementChild.innerHTML = e.dataset.contenue;
+
+                minimizer('article');
+
+                navigate('actualites');
+            })
+        })
+
+        //minimiser le footer
+        document.querySelector('.freduir').addEventListener('click', ()=> {
+            for (let i = 0; i < document.querySelector('.cordonnes').children.length; i++) document.querySelector('.cordonnes').children[i].style.display = 'none';
+            document.querySelector('.cordonnes').style.height = '5vh';
+            document.getElementsByTagName('main')[0].style.height = '75vh';
+            document.querySelector('.bg').style.height = '95vh';
+            document.querySelector('.gradienne').style.height = '95vh';
+            document.querySelector('.freduir').style.display = 'none';
+            document.querySelector('.fagrandir').style.display = 'block';
+        })
+        //agrandir le footer
+        document.querySelector('.fagrandir').addEventListener('click', ()=> {
+            for (let i = 0; i < document.querySelector('.cordonnes').children.length; i++) document.querySelector('.cordonnes').children[i].style.display = 'flex';
+            document.querySelector('.cordonnes').style.height = '10vh';
+            document.getElementsByTagName('main')[0].style.height = '70vh';
+            document.querySelector('.bg').style.height = '90vh';
+            document.querySelector('.gradienne').style.height = '90vh';
+            document.querySelector('.freduir').style.display = 'block';
+            document.querySelector('.fagrandir').style.display = 'none';
+        })
+
+        //MODIFICATION DES TABLEAU 
+        function redeclaration() {
+            const delLigne = document.querySelectorAll('.supprimer-ligne');         //icons de supperssion dans les lignes
+            const editEvent = document.querySelectorAll('.modifier-ligne');               //icons de modification dans les lignes
+            const done = document.querySelectorAll('.terminer-modification');       //icons de termination du modification dans les lignes
+
+            //supprimer une ligne
+            for (let i = 0; i < delLigne.length; i++) {
+                delLigne[i].addEventListener('click', () => {
+                    delLigne[i].parentNode.parentNode.parentNode.remove();
+                })
+            }
+
+            //modifier un evenement
+            for (let i = 0; i < editEvent.length; i++) {
+                editEvent[i].addEventListener('click', () => {
+                    let tab = editEvent[i].parentNode.parentNode.parentNode.children;
+                    for (let k = 0; k < 4; k++) {
+                        tab[k].firstElementChild.disabled = false;
+                    }
+                    editEvent[i].parentNode.lastElementChild.style.display = 'block';
+                });
+            }
+
+            //terminer la modification
+            for (let i = 0; i < done.length; i++) {
+                done[i].addEventListener('click', () => {
+                    let tab = done[i].parentNode.parentNode.parentNode.children;
+                    for (let k = 0; k < 4; k++) {
+                        tab[k].firstElementChild.disabled = true;
+                    }
+                    done[i].parentNode.lastElementChild.style.display = 'none';
+                })
+            }
+        }
+
+        redeclaration();
+
+        //creation d'une nouvelle ligne
+        for (let i = 0; i < 3; i++) {
+            document.querySelectorAll('.ajouter-ligne')[i].addEventListener('click', () => {
+                cloneLigne = document.querySelectorAll('.ajouter-ligne')[i].nextElementSibling.firstElementChild.lastElementChild.cloneNode(true);
+                document.querySelectorAll('.ajouter-ligne')[i].nextElementSibling.firstElementChild.appendChild(cloneLigne);
+                let newLigne = document.querySelectorAll('.ajouter-ligne')[i].nextElementSibling.firstElementChild.lastElementChild;
+                for (let k = 0; k < 4; k++) {
+                    newLigne.children[k].firstElementChild.value = '';
+                    newLigne.children[k].firstElementChild.disabled = false;
+                }
+                redeclaration();
+                newLigne.children[4].firstElementChild.lastElementChild.style.display = 'block';
+            })
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
